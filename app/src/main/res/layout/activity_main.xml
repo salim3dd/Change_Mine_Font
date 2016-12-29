@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.salim3dd.change_mine_font.MainActivity"
+    android:weightSum="1">
+
+    <com.salim3dd.change_mine_font.MyFont
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="بسم الله الرحمن الرحيم"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <com.salim3dd.change_mine_font.MyFont
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="السلام عليكم ورحمة الله وبركاته"
+        android:textColor="#1009c9"
+        android:textSize="20dp" />
+
+    <com.salim3dd.change_mine_font.MyFont
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:text="مرحبا بكم"
+        android:textColor="#e40909"
+        android:textSize="20dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.salim3dd.change_mine_font.MyBut
+                android:id="@+id/btn1"
+                android:background="@color/colorAccent"
+                android:textColor="#FFF"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:onClick="btn1"
+                android:text="الخط 1" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="100dp"
+                android:background="@color/colorAccent"
+                android:textColor="#FFF"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btn2"
+                android:layout_margin="5dp"
+                android:text="الخط 2" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="100dp"
+                android:background="@color/colorAccent"
+                android:textColor="#FFF"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btn3"
+                android:text="الخط 3" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="100dp"
+                android:background="@color/colorAccent"
+                android:textColor="#FFF"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btn4"
+                android:text="الخط 4" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <com.salim3dd.change_mine_font.MyEditTExt
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="بسم الله "
+        android:gravity="center"
+        android:background="#d77d7d"
+        android:textColor="#FFF"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_weight="0.13" />
+
+</LinearLayout>
